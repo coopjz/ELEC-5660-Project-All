@@ -1,0 +1,33 @@
+A_ =  Matrix([
+[0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0], 
+[0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0], 
+[0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0], 
+[0, 0, 0, 0, -(-n1 + u1 - x10)*sin(x5)/(sin(x5)**2 + cos(x5)**2) + (-n3 + u3 - x12)*cos(x5)/(sin(x5)**2 + cos(x5)**2), 0, 0, 0, 0, -cos(x5)/(sin(x5)**2 + cos(x5)**2), 0, -sin(x5)/(sin(x5)**2 + cos(x5)**2), 0, 0, 0], 
+[0, 0, 0, (sin(x4)*sin(x5)**2 + sin(x4)*cos(x5)**2)*(-n1 + u1 - x10)*sin(x4)*sin(x5)/(sin(x5)**2*cos(x4) + cos(x4)*cos(x5)**2)**2 - (sin(x4)*sin(x5)**2 + sin(x4)*cos(x5)**2)*(-n3 + u3 - x12)*sin(x4)*cos(x5)/(sin(x5)**2*cos(x4) + cos(x4)*cos(x5)**2)**2 + (-n1 + u1 - x10)*sin(x5)*cos(x4)/(sin(x5)**2*cos(x4) + cos(x4)*cos(x5)**2) - (-n3 + u3 - x12)*cos(x4)*cos(x5)/(sin(x5)**2*cos(x4) + cos(x4)*cos(x5)**2), (-n1 + u1 - x10)*sin(x4)*cos(x5)/(sin(x5)**2*cos(x4) + cos(x4)*cos(x5)**2) + (-n3 + u3 - x12)*sin(x4)*sin(x5)/(sin(x5)**2*cos(x4) + cos(x4)*cos(x5)**2), 0, 0, 0, 0, -sin(x4)*sin(x5)/(sin(x5)**2*cos(x4) + cos(x4)*cos(x5)**2), -1, sin(x4)*cos(x5)/(sin(x5)**2*cos(x4) + cos(x4)*cos(x5)**2), 0, 0, 0],
+[0, 0, 0, -(sin(x4)*sin(x5)**2 + sin(x4)*cos(x5)**2)*(-n1 + u1 - x10)*sin(x5)/(sin(x5)**2*cos(x4) + cos(x4)*cos(x5)**2)**2 + (sin(x4)*sin(x5)**2 + sin(x4)*cos(x5)**2)*(-n3 + u3 - x12)*cos(x5)/(sin(x5)**2*cos(x4) + cos(x4)*cos(x5)**2)**2, -(-n1 + u1 - x10)*cos(x5)/(sin(x5)**2*cos(x4) + cos(x4)*cos(x5)**2) - (-n3 + u3 - x12)*sin(x5)/(sin(x5)**2*cos(x4) + cos(x4)*cos(x5)**2), 0, 0, 0, 0, sin(x5)/(sin(x5)**2*cos(x4) + cos(x4)*cos(x5)**2), 0, -cos(x5)/(sin(x5)**2*cos(x4) + cos(x4)*cos(x5)**2), 0, 0, 0],
+[0, 0, 0, -(-n4 + u4 - x13)*sin(x5)*sin(x6)*cos(x4) + (-n5 + u5 - x14)*sin(x4)*sin(x6) + (-n6 + u6 - x15)*sin(x6)*cos(x4)*cos(x5), (-sin(x4)*sin(x5)*sin(x6) + cos(x5)*cos(x6))*(-n6 + u6 - x15) + (-sin(x4)*sin(x6)*cos(x5) - sin(x5)*cos(x6))*(-n4 + u4 - x13), (-sin(x4)*sin(x5)*cos(x6) - sin(x6)*cos(x5))*(-n4 + u4 - x13) + (sin(x4)*cos(x5)*cos(x6) - sin(x5)*sin(x6))*(-n6 + u6 - x15) - (-n5 + u5 - x14)*cos(x4)*cos(x6), 0, 0, 0, 0, 0, 0, sin(x4)*sin(x5)*sin(x6) - cos(x5)*cos(x6), sin(x6)*cos(x4), -sin(x4)*sin(x6)*cos(x5) - sin(x5)*cos(x6)],
+[0, 0, 0, (-n4 + u4 - x13)*sin(x5)*cos(x4)*cos(x6) - (-n5 + u5 - x14)*sin(x4)*cos(x6) - (-n6 + u6 - x15)*cos(x4)*cos(x5)*cos(x6), (sin(x4)*sin(x5)*cos(x6) + sin(x6)*cos(x5))*(-n6 + u6 - x15) + (sin(x4)*cos(x5)*cos(x6) - sin(x5)*sin(x6))*(-n4 + u4 - x13), (-sin(x4)*sin(x5)*sin(x6) + cos(x5)*cos(x6))*(-n4 + u4 - x13) + (sin(x4)*sin(x6)*cos(x5) + sin(x5)*cos(x6))*(-n6 + u6 - x15) - (-n5 + u5 - x14)*sin(x6)*cos(x4), 0, 0, 0, 0, 0, 0, -sin(x4)*sin(x5)*cos(x6) - sin(x6)*cos(x5), -cos(x4)*cos(x6), sin(x4)*cos(x5)*cos(x6) - sin(x5)*sin(x6)],
+[0, 0, 0, (-n4 + u4 - x13)*sin(x4)*sin(x5) + (-n5 + u5 - x14)*cos(x4) - (-n6 + u6 - x15)*sin(x4)*cos(x5), -(-n4 + u4 - x13)*cos(x4)*cos(x5) - (-n6 + u6 - x15)*sin(x5)*cos(x4), 0, 0, 0, 0, 0, 0, 0, sin(x5)*cos(x4), -sin(x4), -cos(x4)*cos(x5)],
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]])
+
+U_ =  Matrix([
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 
+[-cos(x5)/(sin(x5)**2 + cos(x5)**2), 0, -sin(x5)/(sin(x5)**2 + cos(x5)**2), 0, 0, 0, 0, 0, 0, 0, 0, 0], 
+[-sin(x4)*sin(x5)/(sin(x5)**2*cos(x4) + cos(x4)*cos(x5)**2), -1, sin(x4)*cos(x5)/(sin(x5)**2*cos(x4) + cos(x4)*cos(x5)**2), 0, 0, 0, 0, 0, 0, 0, 0, 0], 
+[sin(x5)/(sin(x5)**2*cos(x4) + cos(x4)*cos(x5)**2), 0, -cos(x5)/(sin(x5)**2*cos(x4) + cos(x4)*cos(x5)**2), 0, 0, 0, 0, 0, 0, 0, 0, 0], 
+[0, 0, 0, sin(x4)*sin(x5)*sin(x6) - cos(x5)*cos(x6), sin(x6)*cos(x4), -sin(x4)*sin(x6)*cos(x5) - sin(x5)*cos(x6), 0, 0, 0, 0, 0, 0], 
+[0, 0, 0, -sin(x4)*sin(x5)*cos(x6) - sin(x6)*cos(x5), -cos(x4)*cos(x6), sin(x4)*cos(x5)*cos(x6) - sin(x5)*sin(x6), 0, 0, 0, 0, 0, 0], 
+[0, 0, 0, sin(x5)*cos(x4), -sin(x4), -cos(x4)*cos(x5), 0, 0, 0, 0, 0, 0], 
+[0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0], 
+[0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0], 
+[0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0], 
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0], 
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0], 
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]])

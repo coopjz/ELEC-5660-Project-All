@@ -1,0 +1,51 @@
+%YAML:1.0
+
+#common parameters
+image0_topic: "/camera/infra1/image_rect_raw"
+image1_topic: "/camera/infra2/image_rect_raw"
+
+cam0_calib: "left_real.yaml"
+cam1_calib: "right_real.yaml"
+image_width: 848
+image_height: 480
+   
+# Extrinsic parameters.
+body_T_cam0: !!opencv-matrix
+   rows: 4
+   cols: 4
+   dt: d
+   data: [ 0.02932465,  0.01274437,  0.99948869,  0.10296082,
+            -0.99956924, -0.00080737,  0.02933731,  0.01087447,
+            0.00118085, -0.99991846,  0.01271521,  0.03673151,
+            0.,         0.  ,        0.,          1.        ]
+
+#    data: [ 2.9508640954610210e-01, -3.7984942099848609e-02,
+#        9.5471522197714087e-01, -3.5530631875490588e+00,
+#        -9.5129290282084367e-01, 8.1657225454707660e-02,
+#        2.9727749759060479e-01, -2.8874679351090875e+00,
+#        -8.9251464659595742e-02, -9.9593636428474197e-01,
+#        -1.2038868360720434e-02, -1.1415192501646636e+00, 0., 0., 0., 1. ]
+body_T_cam1: !!opencv-matrix
+   rows: 4
+   cols: 4
+   dt: d
+   data:[ 0.0306783,   0.01241837,  0.99945216,  0.10404743,
+            -0.99952856, -0.00084072,  0.03069109, -0.039047,
+            0.0012214,  -0.99992254,  0.01238672,  0.03686889,
+            0.,          0. ,         0. ,         1.        ]
+
+
+max_freq: 20                # max frequency of processing image 
+
+#feature traker paprameters
+max_cnt: 50                # max feature number in feature tracking
+min_cnt: 20                 # min feature number in feature tracking
+min_dist: 30                # min distance between two features 
+
+translation_threshold: 0.05 # min translation to switch key frame
+rotation_threshold: 0.05    # min rotation to switch key frame
+feature_threshold: 50       # min tracking feature to switch key frame
+flow_back: 1            # perform forward and backward optical flow to improve feature tracking accuracy
+
+show_feature: 1           # show tracked features in the images
+
